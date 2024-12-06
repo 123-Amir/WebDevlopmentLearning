@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <h1>javaScript subString</h1>
+    <p id="demo"></p>
+
+    <h2>The replace Methode</h2>
+    <p id="demo1"></p>
+
+    <h2>The replaceAll() Mehtod</h2>
+    <p>ES2021 introduce the string method replaceAll()</p>
+        <p id="demo2"></p>
+
+    <button onclick="myfunction()">Try it</button>  
+    <script>
+        let str = "Apple, Banana, Kiwi";
+        document.getElementById("demo").innerHTML = str.substring(7,13);
+
+            function myfunction(){
+        let text = "please visit Microsoft !";
+        let newText = text.replace("Microsoft", "W3School");    
+        document.getElementById("demo1").innerHTML = newText;
+            }
+
+        let texts = "I love cates. Cates are very easy to love. Cates are very popular.";
+        texts = texts.replaceAll("Cates", "Dogs");
+        texts = texts.replaceAll("cates", "dog");   
+        document.getElementById("demo2").innerHTML= texts;
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            body{
+                background-color: yellow;
+            }
+        </style>
+    </head>
+<body>
+    <h2>What can JavaScript do?</h2>
+    <p>javaScript can change HTML attribute values</p>
+    <button 
+    onclick="document.getElementById('myImage').src='/HTML GRAPHICS/bulb.gif'">Turn on the Light</button>
+    <img id="myImage" src="HTML GRAPHICS\bulb.gif" style="width: 100px">
+
+    <button
+    onclick="document.getElementById('myImage').src='/HTML GRAPHICS/bulb.gif'">Turn off the light</button>
+     
+    <p id="demo1">javaScript can change the style of an Html element </p>
+    <button
+    onclick="document.getElementById('demo1').style.fontSize='35px'">click me</button>
+
+    <p id="demo2">javaScript can hide the html element </p>
+    <button
+    onclick="document.getElementById('demo2').style.display='none'">Click Me!</button>
+    <p>javaScript can show hidden html elements </p>
+
+    <p id="demo3" style="display: none">Hello JavaScript</p>
+        
+    <button
+    onclick="document.getElementById('demo3').style.display='block'">click Here</button>
+</body>
+</html>

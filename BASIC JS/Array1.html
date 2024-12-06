@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <h2>The forEach() Method </h2>
+    <p>Call a function for each array element </p>
+    <p id="demo"></p>
+    <h2>javaScript Arrays</h2>
+    <p id="demo1"></p>
+    <script>
+        const fruits = ["Banana", "Mango", "Apple", "orange"];
+        let text = "<ul>";
+            fruits.forEach(myfunction);
+            text += "</ul>";
+            document.getElementById("demo").innerHTML = text;
+
+            function myfunction(value){
+                text += "<li>" + value + "</li>";
+            }
+
+            const person = [];
+            person[0] = "John";
+            person[1] = "Abraham";
+            person[2] = 42;
+            document.getElementById("demo1").innerHTML = person[0] + " " + person.length;
+    </script>
+</body>
+</html>

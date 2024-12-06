@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #grad{
+            background-image: linear-gradient(red, yellow);
+            text-align: center;
+            height: 100px;
+        }
+        #grad1{
+            background-image: linear-gradient(to right, red, yellow);
+            text-align: center;
+            height: 100px;
+        }
+        #grad2{
+            background-image: linear-gradient(180deg, red, yellow);
+            text-align: center;
+            height: 100px;
+        }
+        #grad3{
+            background-image: linear-gradient(red, yellow, green);
+            text-align: center;
+            height: 100px;
+        }
+        body{
+            background-color: whitesmoke;
+        }
+        #grad4{
+            background-image: linear-gradient(to right, red, orange,yellow,green,blue,indigo,violet);
+
+            text-align: center;
+            height: 100px;
+        }
+        #grad5{
+            background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+            text-align: center;
+            height: 90px;
+        }
+        #grad6{
+            background-image: Repeating-linear-gradient(red, yellow 10%,green 20%);
+            text-align: center;
+            height: 90px;
+        }
+    </style>
+</head>
+<body>
+    <p id="grad">Top to Bottom(By Default)</p>
+    <p id="grad1">left to Right</p>
+    <p id="grad2">180deg</p>
+    <p id="grad3">Multiple color</p>
+    <h1 id="grad4">Rainbow linear-gradient</h1>
+    <h2 id="grad5">Using Transparency</h2>
+    <h2 id="grad6">Repeating a linear-gradient</h2>
+</body>
+</html>

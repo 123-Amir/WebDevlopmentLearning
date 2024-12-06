@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            body{
+                background-color: yellow;
+            }
+        </style>
+        <script>
+            function myfunction(){
+                document.getElementById('demo1').innerHTML='Paragraph changed';
+            }
+        </script>
+    </head>
+<body>
+    <h2>JavaScript in body</h2>
+    <p id="demo"></p>
+    <script>
+        document.getElementById('demo').innerHTML='MY First javaScript';
+    </script>
+    <h1>Demo javaScript iin head</h1>
+    <p id="demo1">A paragarph</p>
+    <button type="button" onclick="myfunction()">Try it</button>
+
+    <h1>Demo javaScript in body</h1>
+    <h2 id="demo2">A heading</h2>
+    <button type="button" onclick="myfunction1()">try it</button>
+    
+    <script>
+        function myfunction1(){
+            document.getElementById('demo2').innerHTML='Heading changed.';
+        }
+    </script>
+
+    <h2>Demo External javaScript</h2>
+    <p id="demo3">A Paragraph</p>
+    <button type="button" onclick="myfunction2()">try it</button>
+    <p>This examle links to "myScript.js"</p>
+    <p>(mufunction is stored in 'myScript.js')</p>
+
+    <script src="myScript.js"></script>
+</body>
+</body>
+</html>

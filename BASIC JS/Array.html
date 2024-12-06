@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(141, 141, 175);
+        }
+    </style>
+</head>
+<body>
+    <h2>javaScript Array</h2>
+    <p id="demo"></p>
+    <p>The toString Method returns an Array as a comma seprated string: </p>
+    <p id="demo1"></p>
+    <h2>uses names to access object Property </h2>
+    <p id="demo2"></p>
+    <script>
+        const car = new Array("Saab", "volvo", "BMW");
+        document.getElementById("demo").innerHTML = car;
+
+        const fruits =  ["Banan","Apple", "Mango", "Orange"];
+        let size = fruits.length;
+        let text = "<ul>";
+            for(let i=0; i<size; i++){
+                text += "<li>" + fruits[i] + "</li>";
+            }   
+            text += "</ul>";
+        document.getElementById("demo1").innerHTML = fruits.toString() + "<br>" + "Size of fruits "
+        + size + "<br>" +text;
+
+        const person = {firstName: "Amir", LastName:"Hussain", Age: "19"}; 
+         
+        document.getElementById("demo2").innerHTML = person.LastName;
+    </script>
+</body>
+</html>

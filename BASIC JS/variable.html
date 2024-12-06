@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            body{
+                background-color: yellow;
+            }
+        </style>
+    </head>
+<body>
+    <h1>JavaScript Variables </h1>
+
+    <p>In This Example, price1, price2, and Total are variables. </p>
+    <p id="demo"></p>
+
+    <p>String are written with qoutes.</p>
+    <p>Numbers are written without qoutes.</p>
+    <p id="demo1"></p>
+
+    <p>You can Declare many variables in one Statement. </p>
+
+    <p id="demo2"></p>
+
+    <script>
+        const price1=5;
+        const price2=6;
+        let total = price1+price2;
+        document.getElementById("demo").innerHTML="The Total Price is: " +total;
+
+        const pi=3.14;
+        let person = "Amir";
+        let Answer = "Yes I am!";
+        document.getElementById("demo1").innerHTML = pi + "<br>" + person + "<br>" + Answer;
+
+        let person2 = "Amir", carname="volvo", Price=200;
+        document.getElementById("demo2").innerHTML = carname+ " "+Price+ " "+person2;
+      //  document.getElementById("demo2").innerHTML = Price;
+
+    </script>
+</body>
+</html>

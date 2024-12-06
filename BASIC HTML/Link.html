@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML link syntax </title>
+    </head>
+    <body>
+        <a href="https://www.w3schools.com/">visit w3schools.com </a><br>
+        <!-- target attribute open the linked document
+        target have follwing values ->_self,_blank,_parent,_top  -->
+        <!--_blank opens the document in new window
+             _self opens the document in same window
+             _parent opens the document in the parent frame
+              _top opens the document in the full body of the window-->
+        <a href="https://www.w3schools.com/" target="_blank">visit w3schools.com </a><br>
+        <a href="https://www.w3schools.com/" target="_self">visit w3schools.com </a><br>
+        <a href="https://www.w3schools.com/" target="_parent">visit w3schools.com </a><br>
+        <a href="https://www.w3schools.com/" target="_top">visit w3schools.com </a><br>
+        <!--Absolute url vs Relative url-->
+        <!--All the above examle are absolute and A link to a page within the same website is
+            specified with relative url(without https://www"part)-->
+            <h2> absolute urls </h2>
+            <p><a href="https:www.w3.org"> w3c </a></p>
+            <p><a href="https:www.google.com"> google  </a></p>
+            <h1> Relative urls </h1>
+            <p><a href="html_images.asp"> HTML images </a></p>
+            <p><a href="/css/default.asp"> css Tutorial </a></p>
+            <!--use an image as a link -->
+            <a href="default.asp">
+                <img src="C:\Users\amirh\OneDrive\Documents\C++ sheet cheat.pdf" alt="  html totorial" style="width: 42px;height: 42px;">
+            </a>
+    </body>
+</html>

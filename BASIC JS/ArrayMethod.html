@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            body{
+                background-color: yellow;
+            }
+        </style>
+    </head>
+<body>
+    <h2>The join() Method</h2>
+    <p>The join() Method joins array element into a string</p>
+    <p id="demo"></p>
+    <h2>The shift() Method</h2>
+
+<p>The shift() method removes the first element of an array (and "shifts" the other elements to the left):</p>
+    <p id="demo1"></p>
+
+<p>The unshift() method adds new elements to the beginning of an array:</p>
+<p id="demo2"></p>
+
+    <h2>The concat() Method merges array: </h2>
+    <p id="demo3"></p>
+
+    <h2>The flat() Method</h2>
+    <p id="demo4"></p>
+
+    <h2>The splice() Method adds new element to an Array: </h2>
+    <p id="demo5"></p>
+    <p>The splice() methods can be used to remove array elements:</p>
+    <p id="demo6"></p>
+    <h2>The toSpliced() Method</h2>
+    <p id="demo7"></p>
+    <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo").innerHTML = fruits.join(" * ");
+        
+        fruits.shift();
+        document.getElementById("demo1").innerHTML = fruits;
+        fruits.unshift("lemon");
+        document.getElementById("demo2").innerHTML = fruits;
+
+        const myGirls = ["Tanya", "Harita"];
+        const myboys = ["Amir", "Rahul", "shadab"];
+        const mychildren = myGirls.concat(myboys);  
+        document.getElementById("demo3").innerHTML = mychildren;
+
+        const myArr = [[1,2],[3,4],[5,6]];       
+        const newArr = myArr.flat();
+        document.getElementById("demo4").innerHTML = newArr;
+
+        fruits.splice(2, 0, "Lemon", "Kiwi");
+        document.getElementById("demo5").innerHTML = fruits;
+        fruits.splice(0, 1);
+        document.getElementById("demo6").innerHTML = fruits;
+        
+        const month = ["jan", "feb", "mar", "Apr"];
+        const spliced = month.toSpliced(0, 1);
+        document.getElementById("demo7").innerHTML = spliced;
+    </script>
+</body>
+</html>

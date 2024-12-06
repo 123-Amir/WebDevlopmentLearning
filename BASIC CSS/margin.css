@@ -1,0 +1,23 @@
+div{
+    border: 1px solid black;
+    margin: 25px 50px 75px 100px;
+    background-color: lightblue;
+}
+h2{
+    text-align: center;
+    color: red;
+}
+div{
+    margin: 25px 50px 75px;
+}
+div{
+    margin: 25px 50px;
+}
+div{
+    margin: 25px;
+}
+div{
+    width: 300px;
+    margin: auto;
+    border: 1px solid red;
+}

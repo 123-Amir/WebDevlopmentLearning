@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- outline width and color -->
+    <link rel="stylesheet" href="/BASIC CSS/Outlinewidth.css">
+    <!-- shorthand property -->
+    <style>
+        p.ex1{
+            outline: dashed;
+        }
+        p.ex2{
+            outline: dotted red;
+        }
+        p.ex3{
+            outline: 5px solid yellow;
+        }
+        p.ex4{
+            outline: thick ridge pink;
+        }
+        /* outline offset */
+        p{
+            margin: 30px;
+            border: 1px solid black;
+            outline: 1px solid red;
+            outline-offset: 15px;
+            outline-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2>The Outline-width property</h2>
+    <p class="ex1">A thin Outline</p>
+    <p class="ex2">A medium outline</p>
+    <p class="ex3">A thick outline</p>
+    <p class="ex4">A 4px thick outline</p>
+
+    <h2>The outline-offset Property</h2>
+    
+    <p>This paragraph has an outline 15px outside the border</p>
+</body>
+</html>

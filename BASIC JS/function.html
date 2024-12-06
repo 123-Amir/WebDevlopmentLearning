@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            body{
+                background-color: blueviolet;
+            }
+        </style>
+    </head>
+
+<body>
+    <h2>JavaScript function </h2>
+    <p>Call a function which performs a calculation and returns the result: </p>
+    <p id="demo"></p>
+
+    <h2>Faherenheit to celsius: </h2>
+    <script>
+        function myfunction(p1, p2){
+            return p1*p2;
+        }
+        let result = myfunction(4, 3);
+        document.getElementById("demo").innerHTML = result;
+    </script>
+    <p id="demo1"></p>
+    <script>
+         function toCelsius(f){
+            return (5/9) * (f-32);
+        }
+        let value = toCelsius(77);
+        document.getElementById("demo1").innerHTML = value;
+    </script>
+    <h2>using a function as a variable: </h2>
+    <p id="demo3"></p>
+    <script>
+        let text = "The temprature is: " + toCelsius(77) + "celsius.";
+        document.getElementById("demo3").innerHTML = text;
+
+        function toCelsius(fahrenheit){
+            return (5/9) * (fahrenheit-32);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            body{
+                background-color: green;
+            }
+        </style>
+    </head>
+<body>
+    <h2>THE EPSILON PROPERTY</h2>
+    <p>The diffrence between 1 and smallest floating point Number greater than 1, in javaScript is: </p>
+    <p id="demo"></p>
+    <h2>The MAX_VALUE Property</h2>
+    <p id="demo1"></p>
+    <h2>The MIN_SAFE_INTEGER Property</h2>
+    <p id="demo2"></p>
+    <h2>The NAGATIVE_INFINITY Property</h2>
+    <p id="demo3"></p>
+    <script>
+        let x = Number.EPSILON;
+        document.getElementById("demo").innerHTML=x;
+
+        let y = Number.MAX_VALUE;
+        document.getElementById("demo1").innerHTML =y;
+
+        let z = Number.MIN_SAFE_INTEGER;
+        document.getElementById("demo2").innerHTML =z;
+
+        let a = -1 / 0;
+        document.getElementById("demo3").innerHTML = a;
+    </script>
+</body>
+</html>

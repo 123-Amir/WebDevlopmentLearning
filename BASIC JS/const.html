@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <h2>JavaScript const</h2>
+    <p>Declaring a constant array does NOT make the elements unchangeable:</p>
+
+    <p id="demo"></p>
+    <h1></h1>
+    <p id="demo1"></p>
+    <script>
+        const cars=['Saab', 'volvo', 'BMW'];
+
+        cars[0] = 'toyota';
+
+        cars.push('Audi');
+        //Display The Array
+        document.getElementById('demo').innerHTML= cars;
+        cars.pop('Saab');
+        document.getElementById('demo').innerHTML=cars;
+        
+        //create a object
+        const car = {type:"fiat", model:"500", color:white};
+            //change a property
+            car.color = 'red';
+            //Add a property        
+            car.owner = 'Amir';
+        document.getElementById("demo1").innerHTML="Car owner is " +car.owner;
+    </script>
+</body>
+</html>

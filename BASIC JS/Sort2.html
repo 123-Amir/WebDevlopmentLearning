@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: yellow;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>The Sort() Method</h2>
+    <p>Click the buttons to sort the Array alphabetically or numerically</p>
+    <button onclick="myFunction1()">Sort Alphabetically</button>
+    <button onclick="myFunction2()">Sort numerically</button>
+    <p id="demo"></p>
+
+    <p>Click on the button (again and again) to sort the array in random order</p>
+    <button onclick="myfunction()">Try it</button>
+    <p id="demo1"></p>
+    <h2>The Fisher Yates Method </h2>
+    <button onclick="myFunction3()">Try OnceMore</button>
+    <p id="demo2"></p>
+    <script>
+        const points = [30,432,132,4,67,8,90];
+        document.getElementById("demo").innerHTML = points;
+
+        function myFunction1(){
+            points.sort();
+            document.getElementById("demo").innerHTML = points;
+        }
+        function myFunction2(){
+            points.sort(function(a, b){return a-b});
+            document.getElementById("demo").innerHTML = points;
+        }
+        const point = [40,100,5,1,25,10];
+        document.getElementById("demo1").innerHTML = point;
+        function myfunction(){
+            point.sort(function(){return 0.5 - Math.random()});
+            document.getElementById("demo1").innerHTML = point;
+        }
+        const point2 = [23,4,51,3,4,56,678,90];
+        document.getElementById("demo2").innerHTML = point2;
+        function myFunction3(){
+            for(let i=point2.length-1;i>0;i--){
+                let j = Math.floor(Math.random() * (i+1));
+                let k = point2[i];
+                point2[i] = point2[j];
+                point2[j] = k;
+            }
+            document.getElementById("demo2").innerHTML =point2;
+        }
+    </script>
+</body>
+</html>

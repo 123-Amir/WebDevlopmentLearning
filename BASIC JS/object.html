@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <h2>java script </h2>
+    <p>An Object method is a function Definition, stored as a property value.</p>
+    <p id="demo"></p>
+    <script>
+        //create an object
+        const person ={
+            firstName: "Amir",
+            lastName: "Hussain",
+            id: 5566,
+            fullName: function(){
+                return this.firstName + " " + this.lastName;
+            }
+        };
+        // display data from an object
+        document.getElementById('demo').innerHTML=person.fullName();
+    </script>
+</body>
+</html>

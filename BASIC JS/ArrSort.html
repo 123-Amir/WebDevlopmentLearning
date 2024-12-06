@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            body{
+                background-color: green;
+            }
+        </style>
+    </head>
+<body>
+    <h2>The Sort() Method</h2>
+    <p id="demo"></p>
+    <h2>The reverse() Method </h2>
+    <p id="demo1"></p>
+
+    <h2>The toReversed() Method</h2>
+    <p id="demo2"></p>
+    <p>Sort the Array in ascending order: </p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p>Sort the Array in Descending order: </p>
+    <p id="demo5"></p>
+    
+    <script>
+        const fruits =["Banana","Orange", "Apple", "Mango"];
+        fruits.sort();
+        document.getElementById("demo").innerHTML = fruits;
+
+        fruits.reverse();
+        document.getElementById("demo1").innerHTML =fruits;
+
+        const month = ["jan", "Feb", "Mar", "Apr"];
+        const sorted = month.toReversed();
+        document.getElementById("demo2").innerHTML =sorted;
+
+        const points =[40,32,1,45,67,2,5];
+        document.getElementById("demo3").innerHTML = points;
+        points.sort(function(a, b){return a-b});
+        document.getElementById("demo4").innerHTML = points;
+        points.sort(function(a, b){return b-a});
+        document.getElementById("demo5").innerHTML = points;
+    </script>
+</body>
+</html>

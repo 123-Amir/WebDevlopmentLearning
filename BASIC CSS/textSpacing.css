@@ -1,0 +1,31 @@
+
+/* Property	Description
+letter-spacing	Specifies the space between characters in a text
+line-height	Specifies the line height
+text-indent	Specifies the indentation of the first line in a text-block
+white-space	Specifies how to handle white-space inside an element
+word-spacing	Specifies the space between words in a text */
+p{              
+    text-indent: 50px;
+}
+h1{
+    letter-spacing: 5px;
+}
+h2{
+    letter-spacing: -2px;
+}
+p.small{
+    line-height: 0.8;
+}
+p.big{
+    line-height: 1.8;
+}
+p.one{
+    word-spacing: 10px;
+}
+p.two{
+    word-spacing: -2px;
+}
+p{
+    white-space: nowrap;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <h2>javaScript String indexOf() Mehtod</h2>
+    <p id="demo"></p>
+    <script>
+        let text = "Please locate where 'locate' occurs!";
+        let index = text.indexOf("locate");
+        let index1 = text.lastIndexOf("locate");
+        let index2 = text.lastIndexOf("Jhon");
+        let text1 = "Please locate where 'locate' occurs!";
+
+        let text3 = "The ran in SPAIN stays mainly in the plain";
+        const Myarray = text3.match("ain");
+
+        let text4 = "I love cates. Cates are very easy to love. Cates are very popular.";
+        const iterator = text4.matchAll("Cates"); 
+        
+        let txt = "Hello World, welcome to the universe.";
+        let result = txt.includes("World", 12);
+        //let result1 = tex.startsWith("Hello");
+        document.getElementById("demo").innerHTML = index + "<br>" + index1 + "<br>" +index2 + "<br>"
+        + text1.search("locate") + "<br>" + Myarray.length + " "+ Myarray + "<br>" +Array.from(iterator) 
+        + "<br>" + result ; 
+        
+    </script>
+</body>
+</html>
